@@ -1,24 +1,37 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>React Hello World</title>
   </head>
   <body>
-    hello
-<div id="app"></app>
-hello saichen!
-bye
+    
+    <!--
+    The recommended approach in React is to use a container
+    dive to load your react code into, rather than using `document.body`.
+    
+    This can be any element or tag name, just don't use `document.body`
+    if you can avoid it.
+    -->
+    <div id='root'></div>
+    
+    <!--
+    For ease of use, we are including the React, ReactDOM and Babel CDN
+    builds to make getting started as fast as possible.
+    
+    In production, you'll want to instead look at using something 
+    like Gulp, Grunt or WebPack (my personal recommendation) 
+    to compile JSX into JavaScript. Also, check out:
+    http://facebook.github.io/react/docs/tooling-integration.html
+    -->
+    <script src="https://fb.me/react-15.0.1.js"></script>
+    <script src="https://fb.me/react-dom-15.0.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    
+    <!--
+    This is where you link to your React code. Can be .js or .jsx 
+    extension, doesn't really matter.
+    -->
+    <script src="scripts.js" type="text/babel"></script>
   </body>
 </html>
