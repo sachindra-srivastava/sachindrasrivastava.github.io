@@ -2,20 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+class Application extends React.Component {
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit the <code>src/App.js</code> and save to reload it.
-        </p>
-      </div>
-    );
+    return <div>
+      <h1>Hello, ES6 and React 0.13!</h1>
+      <p>
+        More info <a href="https://github.com/bradleyboy/codepen-react" target="_blank">here</a>.
+      </p>
+    </div>;
   }
 }
 
-export default App;
+/*
+ * Render the above component into the div#app
+ */
+React.render(<Application />, document.getElementById('app'));
