@@ -13,10 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-
+    "eject": "react-scripts eject"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
@@ -29,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/sachindrasrivastava/sachindrasrivastava.github.io/issues"
   },
-  "homepage": "https://github.com/sachindrasrivastava/sachindrasrivastava.github.io/sachu"
+  "homepage": "https://github.com/sachindrasrivastava/sachindrasrivastava.github.io#readme"
 }
